@@ -1,1 +1,1 @@
-# Night-Of-Paradise-V1 crée et dévelloper par ResShark 
+# Night-Of-Paradise-V1 dévelloper par ResShark 
