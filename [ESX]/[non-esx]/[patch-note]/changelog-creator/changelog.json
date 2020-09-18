@@ -1,0 +1,5 @@
+{
+  "DO_NOT_CHANGE_VER":"2.0.1",
+  "Version":"2.0.1",
+  "Changes":["+ Ajout de tenue mod pour la LSPD","+ Ajout de 7 nouveau grade au EMS","* Modification des tenue EMS","- Retrait temporaire du job brasseur","+ Ajout des radars","Passage du serveur en 80 slots"]
+}
