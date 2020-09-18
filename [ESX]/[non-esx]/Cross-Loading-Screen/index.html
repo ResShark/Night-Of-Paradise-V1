@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+  <audio id="loading" autoplay loop ><source src="music/loading.ogg" type="audio/ogg"></audio>
+  <div class="color"></div>
+  <div class="background-color"></div>
+<!-- partial:index.partial.html -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,100' rel='stylesheet' type='text/css'>
+
+<div class="price-table-wrapper">
+  <div class="pricing-table">
+    <div class="name">
+      <h3 class="name-serveur">Night Of Paradise</h3>
+     </div>
+    <h2 class="pricing-table__header">Infos</h2>
+    <ul class="pricing-table__list">
+      <li><h3 class="text-info">Joueurs Max: <b class="black">128</b></h3></li>
+      <li><h3 class="text-info">Gamemode: <b class="black">Roleplay</b></h3></li>
+      <li><h3 class="text-info">Discord: <b class="black">RmCxDttF</b></h3></li>
+      <li><h3 class="text-info">Site Web: <b class="black">xlife.fr</b></h3></li>
+    </ul>
+  </div>
+  <div class="pricing-table">
+    <h2 class="pricing-table__header">Règlement</h2>
+    <ul class="pricing-table__list">
+      <li>Ne pas freekill/carkill</li>
+      <li>Merci de jouez le pain/fear RP</li>
+      <li>PowerGaming interdit</li>
+      <li>Streamhack interdit</li>
+      <li>Mod/hack Menu interdit</li>
+      <li>Discord Obligatoire</li>
+    </ul>
+  </div>
+  <div class="bar">
+      <div class="loadbar"><div class="thingy"></div></div>
+  </div>
+</div>
+<div class="bottom">
+    <div id="gradient">
+    </div>
+</div>
+
+<script>
+  var vid = document.getElementById("loading");
+  vid.volume = 0.1
+</script>
+
+<script type="text/javascript">
+// this will actually restart the loading bar a lot, making multiple loading bars is an exercise to the reader... for now.
+// for a set of possible events, see https://github.com/citizenfx/cfx-client/blob/up-master/components/loading-screens-five/src/LoadingScreens.cpp
+var count = 0;
+var thisCount = 0;
+
+const handlers = {
+ startInitFunctionOrder(data)
+ {
+     count = data.count;
+
+     document.querySelector('.letni h3').innerHTML += emoji[data.type][data.order - 1] || '';
+ },
+
+ initFunctionInvoking(data)
+ {
+     document.querySelector('.thingy').style.left = '0%';
+     document.querySelector('.thingy').style.width = ((data.idx / count) * 100) + '%';
+ },
+
+ startDataFileEntries(data)
+ {
+     count = data.count;
+
+     document.querySelector('.letni h3').innerHTML += "\u{1f358}";
+ },
+
+ performMapLoadFunction(data)
+ {
+     ++thisCount;
+
+     document.querySelector('.thingy').style.left = '0%';
+     document.querySelector('.thingy').style.width = ((thisCount / count) * 100) + '%';
+ },
+
+ onLogLine(data)
+ {
+     document.querySelector('.letni p').innerHTML = data.message + "..!";
+ }
+};
+
+window.addEventListener('message', function(e)
+{
+ (handlers[e.data.eventName] || function() {})(e.data);
+});
+</script>
+
+</body>
+</html>

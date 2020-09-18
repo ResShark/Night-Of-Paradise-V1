@@ -1,0 +1,278 @@
+body {
+  background-color: #3d3d3d;
+}
+
+.background-color {
+  background-image: url("img/background.jpg");
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+  display: block;
+  z-index: 1;
+  opacity: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  padding-top: 70px;
+}
+h1 a {
+  color: #66CCCC;
+}
+
+.price-table-wrapper {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.price-table-wrapper .featured-table {
+  box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+}
+.price-table-wrapper .pricing-table {
+  display: inline-block;
+  border: 1px solid #C8C8C8;
+  border-radius: 10px;
+  background: white;
+  margin: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 25%;
+}
+.price-table-wrapper .pricing-table__header {
+  padding: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background: #3d3d3d;
+}
+.price-table-wrapper .pricing-table__price {
+  color: #66CCCC;
+  padding: 20px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 500;
+}
+.price-table-wrapper .pricing-table__button {
+  display: block;
+  background: #66CCCC;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.price-table-wrapper .pricing-table__button:before {
+  position: absolute;
+  left: -20%;
+  top: -10%;
+  content: '';
+  width: 60%;
+  height: 220%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  background: white;
+  opacity: .3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.price-table-wrapper .pricing-table__button:after {
+  position: absolute;
+  content: '>';
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  padding: 15px;
+  padding-right: 40px;
+  color: white;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.price-table-wrapper .pricing-table__button:hover {
+  background: black;
+}
+.price-table-wrapper .pricing-table__list {
+  padding: 20px;
+  color: #A0A0A0;
+}
+.price-table-wrapper .pricing-table__list li {
+  padding: 15px;
+  border-bottom: 1px solid #C8C8C8;
+}
+.price-table-wrapper .pricing-table__list li:last-child {
+  border: none;
+}
+.price-table-wrapper .pricing-table:hover {
+  box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+}
+.price-table-wrapper .pricing-table:hover .pricing-table__button {
+  padding-left: 0;
+  padding-right: 35px;
+}
+.price-table-wrapper .pricing-table:hover .pricing-table__button:before {
+  top: -80%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 100%;
+}
+.price-table-wrapper .pricing-table:hover .pricing-table__button:after {
+  opacity: 1;
+  padding-right: 15px;
+}
+
+.name-serveur {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  padding-top: 70px;
+  color: white;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 160px;
+}
+
+.name {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#gradient
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    height: 25%;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.text-info {
+  margin-left: 5px;
+  font-size: 20px;
+  font: solid;
+}
+
+.black {
+  color: black;
+}
+
+.bar {
+  text-align: center;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+}
+
+.letni
+{
+}
+
+.letni p
+{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.letni p
+{
+  justify-content: center;
+    font-size: 22px;
+
+    margin-left: 5px;
+
+    margin-top: 0px;
+}
+
+.letni h2, .letni h3
+{
+    font-family: BankGothic;
+
+    text-transform: uppercase;
+
+    font-size: 50px;
+
+    margin: 0px;
+
+    display: inline-block;
+}
+
+.loadbar
+{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+
+    margin-left: 2px;
+    margin-right: 3px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: block;
+}
+
+.thingy
+{
+    width: 0;
+    background-color: rgb(100, 100, 100);
+    height: 300px;
+
+    position: absolute;
+    left: 0%;
+}
