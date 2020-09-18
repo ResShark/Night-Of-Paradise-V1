@@ -1,0 +1,155 @@
+body {
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-user-select: none; 
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.container {
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+}
+
+.card {
+    background-color: rgba(0,0,0,0.7);
+    border-left: 1.5px solid rgba(29, 29, 29, 0.7);
+    border-bottom: 1.5px solid rgba(29, 29, 29, 0.7);
+    border-right: 1.5px solid rgba(29, 29, 29, 0.7);
+    width: 420px;
+    height: 470px;
+    position: absolute;
+    margin-left: 39.89%;
+    margin-top: 0%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.cardheader {
+	background-image: repeating-linear-gradient(to right, rgb(0, 204, 255), rgb(234, 0, 255));
+    background-size: 200% 200%;
+    background-position: 100% 100%;  
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 39.92%;
+    margin-top: 14%;
+    width: 422.5px;
+    height: 29.9px;
+    animation: Fade 10s ease infinite;
+}
+
+.cardheader p {
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    position: relative;
+    top: 20%;
+}
+
+.progress-bar {
+    position: relative;
+    top: 5%;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 250px;
+    height: 22.9px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-image: repeating-linear-gradient(to right, rgb(0, 204, 255), rgb(234, 0, 255));
+    background-size: 200% 200%;
+    background-position: 100% 100%; 
+    border-radius: 3px;
+    animation: Fade 10s ease infinite;
+    border-radius: 10px;
+}
+
+.card p {
+    color: white;
+    margin-top: 7%;
+    font-family: Roboto;
+    text-align: center;
+    position: relative;
+    top: -42.9%;
+}
+
+.info {
+    margin-top: -40%; 
+}
+
+#info {
+    margin-top: -2%;
+}
+
+.item {
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+    bottom: 175px;
+    left: 52.9px;;
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    border-radius: 5px;
+    margin-left: 9%;
+    overflow: hidden;
+}
+
+.item img {
+    width: 59px;
+    height: 59px;
+    margin-left: 20%;
+    margin-top: 7%;
+}
+
+.item:hover {
+    background-image: repeating-linear-gradient(to right, rgb(0, 204, 255), rgb(234, 0, 255));
+    background-size: 200% 200%;
+    background-position: 100% 100%;  
+}
+
+@-webkit-keyframes Fade {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+  }
+  
+  @-moz-keyframes Fade {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+  }
+  
+  @keyframes Fade { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+  }
+  
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
