@@ -305,7 +305,7 @@ PerformHttpRequest('https://raw.githubusercontent.com/Flatracer/FiveM_Resources/
 			print()
 			print()
 			print('^6##############^0')
-			print('^6##^0 ^5Server ^1Developped^0 ^5&^0 ^1Edited^0 ^5by^0 ^2Sam et Laura^0')
+			print('^6##^0 ^5Server ^1Developped^0 ^5&^0 ^1Edited^0 ^5by^0 ^2 ResShark^0')
 			print('^6##############^0')
 		end
 		print('\n')
