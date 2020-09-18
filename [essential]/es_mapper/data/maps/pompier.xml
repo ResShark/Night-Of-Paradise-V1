@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Metadata>
+    <Creator>es_mapper</Creator>
+    <Name>es_mapper</Name>
+    <Description>es_mapper</Description>
+    <TeleportPoint>
+      <X>0.0</X>
+      <Y>0.0</Y>
+      <Z>0.0</Z>
+      <Heading>0.0</Heading>
+    </TeleportPoint>
+  </Metadata>
+  <Objects>
+    <MapObject>
+      <Type>Prop</Type>
+      <Hash>-1723138247</Hash>
+      <Name>vb_ca_tunnel_01blocker001</Name>
+      <Dynamic>false</Dynamic>
+      <Door>false</Door>
+      <Position>
+        <X>1141.8795166016</X>
+        <Y>-1452.458618164</Y>
+        <Z>39.56625366211</Z>
+      </Position>
+      <Rotation>
+        <X>0.0</X>
+        <Y>0.0</Y>
+        <Z>0.0</Z>
+      </Rotation>
+      <Quaternion>
+        <X>0.0</X>
+        <Y>0.0</Y>
+        <Z>0.0</Z>
+        <W>1.0</W>
+      </Quaternion>
+    </MapObject>
+  </Objects>
+</Map>
